@@ -8,13 +8,6 @@
     font-size: 16px;
 }
 
-body{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
 h1{
     text-align: center;
     font-size: 2rem;
@@ -31,62 +24,6 @@ h2{
     height: 20px;
 }
 
-.accordion{
-    width: 100%;
-    margin: 20 auto;
-    color: black;
-    padding: 45px;
-}
-
-.accordion .container{
-    position: relative;
-    margin: 10px;
-}
-
-.accordion .label{
-    position: relative;
-    padding: 10px 0;
-    font-size: 20px;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-.accordion .label::before{
-    content: '+';
-    color: black;
-    position: absolute;
-    top: 50%;
-    right: 2px;
-    font-size: 24px;
-    font-weight: 400;
-    transform: translateY(-50%);
-}
-
-.accordion .content{
-    position: relative;
-    height: 0;
-    text-align: justify;
-    width: 95%;
-    overflow: hidden;
-    transition: 0.5s;
-}
-
-.accordion hr {  
-    width: 100;  
-    margin-left: 0;  
-    border: 0.5px solid #f0f0f0;  
-}
-
-.accordion .container.active .content{
-    height: 120px;
-    padding: 10px 0;
-}
-
-.accordion .container.active .label::before{
-    content: '-';
-    font-size: 30px;;
-}
-
 .credits{
     text-align: center;
     justify-content: center;
@@ -95,24 +32,62 @@ h2{
     padding-bottom: 40px;
 }
 
+.accordion-section{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.accordion-section hr{
+    width: 100;  
+    margin-left: 0;  
+    border: 0.5px solid #f0f0f0;  
+}
+
+.accordion{
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+    padding: 14px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.4s;
+}
+  
+.active, .accordion:hover{
+  background-color: #fff;
+}
+
+.accordion:after{
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after{
+  content: "\2212";
+}
+
+.panel{
+  margin: 0 20px 0 20px;
+  background-color: white;
+  text-align: justify;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
 /* Media Queries - Responsive Design */
 /* smaller than iPad */
 @media (max-width: 576px) {
-    *{
-        
-    }
 
-    .accordion{
-        width: 100%;
-        padding: 1rem;
-    }
-
-    .credits{
-        font-size: 0.7rem;
-        padding: 1rem;
-    }
-
-    h1{
-        padding: 1rem;
+    .accordion-section{
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
