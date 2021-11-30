@@ -1,4 +1,4 @@
-# Easy Accordion 1.2 by JM1069
+# Easy Accordion 🗃 1.2 by JM1069
 Simple accordion-component build with HTML, CSS and JavaScript for your websites.
 
 This accordion will always take the full width of the section's parent => can be changed in main.css
