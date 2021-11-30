@@ -62,11 +62,11 @@ h1{
     outline: none;
     font-size: 18px;
     font-weight: 500;
-    transition: 0.4s;
+    transition: 0.1s;
 }
   
 .active, .accordion:hover{
-  background-color: #fff;
+  background-color: #f2f2f2;
 }
 
 .accordion:after{
@@ -83,12 +83,17 @@ h1{
 
 /* Text inside of Accordion */
 .panel{
-  margin: 0 20px 0 20px;
+  margin: 0 20px;
   background-color: white;
   text-align: justify;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+/* content inside panel padding */
+.panel-content{
+    padding: 20px 0;
 }
 
 /* Media Queries - Responsive Design */
