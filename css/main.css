@@ -15,22 +15,19 @@ body{
     border: 0;
 }
 
+/* Headings here */
 h1{
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
 }
 
-h2{
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-
+/* Creates Space between Elements (change value to create more or less space*/
 .spacer{
     height: 20px;
 }
 
+/* Credits on Bottom of Page (can be deleted) */
 .credits{
     text-align: center;
     justify-content: center;
@@ -39,6 +36,9 @@ h2{
     padding-bottom: 40px;
 }
 
+/* Accordion Styling */
+
+/* Container of all Accordions */
 .accordion-section{
     padding-left: 2rem;
     padding-right: 2rem;
@@ -50,6 +50,7 @@ h2{
     border: 0.5px solid #f0f0f0;  
 }
 
+/* Accordion */
 .accordion{
     background-color: #fff;
     color: black;
@@ -80,6 +81,7 @@ h2{
   content: "\2212";
 }
 
+/* Text inside of Accordion */
 .panel{
   margin: 0 20px 0 20px;
   background-color: white;
@@ -90,7 +92,7 @@ h2{
 }
 
 /* Media Queries - Responsive Design */
-/* smaller than iPad */
+/* smaller padding on mobile devides */
 @media (max-width: 576px) {
 
     .accordion-section{
